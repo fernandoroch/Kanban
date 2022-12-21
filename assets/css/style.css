@@ -31,7 +31,7 @@ header {
 .title {
   text-align: center;
   padding: 1.3rem 0;
-  color: #fff;
+  color: rgb(255, 255, 255);
   margin: 2rem 0 4rem 0;
 }
 
@@ -100,21 +100,35 @@ header nav li.active span{
 
 /*   conteudo geral   */
 
-.conteudo .h2{
+ .button-adiciona{
   text-align: center;
   color: #fff;
   margin:  auto;
   margin: 3rem 0 3rem 16.1rem;
   font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
 }
 
-.conteudo-principal  {
+.button-adiciona span {
+  text-align: end;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+.button-adiciona span:hover {
+  color: #7969f3;
+}
+
+.conteudo-principal {
   margin-left: 16.1rem;
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
 
-.conteudo-principal div {
+.conteudo-principal .card {
   margin: 15px;
   display: grid;
   gap: 20px;
@@ -124,17 +138,30 @@ header nav li.active span{
   background-color: #333542;
   color: #ffffff;
   box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.card h2 span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  border-radius: 50%;
+  color: red;
 }
 
 /*   responsividade  */
 
+
 @media (max-width: 960px) {
-  .conteudo-principal  {
+  .conteudo-principal {
     grid-template-columns: repeat(2,1fr);
-    
   }
 }
 @media (max-width: 768px) {
+  
   .conteudo-principal  {
     grid-template-columns: repeat(3,1fr);
     margin-left: 0;
@@ -198,7 +225,7 @@ header nav li.active span{
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, .7);
   z-index: 100;
   animation: modal .5s ease forwards;
   
@@ -229,10 +256,10 @@ header nav li.active span{
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #ffffff;
-  height: 40vh;
   padding: 0 9rem;
+  height: 40vh;
   max-width: 30%;
   display: flex;
   align-items: center;
@@ -254,9 +281,10 @@ header nav li.active span{
   border-radius: 5px;
   background: transparent;
   color: #fff;
+  outline: none;
 }
 
-.modal-coluna .fechar-modal {
+.modal-coluna .fechar-modal, .fechar-modal-descri {
   position: absolute;
   top: 15px;
   right: 20px;
@@ -292,3 +320,31 @@ header nav li.active span{
 .modal-coluna button:hover {
   scale: 1.04;
 }
+
+.card-add  {
+  color: #929399;
+}
+
+/*   estilizndo modal add cards*/
+
+.modal-coluna form .descricao {
+  margin-top: 1rem;
+}
+
+.modal-coluna .modal-descricao {
+  height: 400px;
+  max-width: 40%;
+} 
+
+.modal-coluna form textarea {
+  background: transparent;
+  color: #fff;
+  outline: none;
+  padding: 10px;
+}
+
+.button-adiciona {
+  
+}
+
+

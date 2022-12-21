@@ -6,21 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Document</title>
+  <title>Canban</title>
 </head>
 
 <body>
+
+  <!--  modal adiciona nova coluna  -->
   <div class="modal-new-coluna active-modal">
     <div class="modal-coluna">
       <form>
-        <div  class="fechar-modal">X</div>
+        <div class="fechar-modal">X</div>
         <label for="add-titulo">Adione o titulo</label>
-        <input type="text">
-        <button type="button">adcionar</button>
+        <input type="text" id="input-name" maxlength="25">
+        <button type="button" id="adicionar-coluna">adcionar</button>
       </form>
     </div>
   </div>
+
+  <!--  modal adiciona novo card  -->
+  <div class="modal-new-coluna modal-descrip-new active-modal">
+    <div class="modal-coluna coluna-descrip">
+      <form class="modal-descricao">
+        <div class="fechar-modal-descri">X</div>
+        <label>Adione o titulo</label>
+        <input type="text" id="input-title" maxlength="25">
+        <label class="descricao">Adicione uma descrição</label>
+        <textarea id="descri" name="text" id="" cols="30" rows="5"></textarea>
+        <button type="button" id="card-descri">adcionar</button>
+      </form>
+    </div>
+  </div>
+
   <div class="container">
+    <!--  menu lateral  -->
     <header>
       <nav>
         <div class="title">
@@ -32,36 +50,18 @@
       </nav>
 
     </header>
+
+    <!--  titulo e add novas colunas  -->
     <main class="conteudo">
-      <h2 class="h2">Todas as Tarefas</h2>
-      <div class="conteudo-principal">
-        <div class="todas-tarefas">
-          <h2>To do</h2>
-          <p>nenhun card</p>
-          <button>+ Adicionr um novo card</button>
-        </div>
-        <div class="fazendo-tarefas">
-          <h2>Doing</h2>
-          <p>nenhun card</p>
-          <button>+ Adicionr um novo card</button>
-        </div>
-        <div class="tarefas-feitas">
-          <h2>Done</h2>
-          <p>nenhun card</p>
-          <button>+ Adicionr um novo card</button>
-        </div>
+      <div class="button-adiciona">
+        <h2 class="h2">Todas as Tarefas</h2>
+        <span class="modal-nova-coluna">+ adicionar nova coluna</span>
       </div>
 
-      <div id="conteudo-adicionado" class="conteudo-principal">
-        
-      </div>
+      <!--  todas as colunas  -->
       <div class="conteudo-principal">
-        <div class="tarefas-feitas add-coluna">
-          <h2 class="flex nova-coluna">+</h2>
-          <p>Nova coluna</p>
-        </div>
-      </div>
 
+      </div>
     </main>
   </div>
 
