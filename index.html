@@ -28,13 +28,21 @@
     <div class="modal-coluna coluna-descrip">
       <form class="modal-descricao">
         <div class="fechar-modal-descri">X</div>
-        <label>Adione o titulo</label>
-        <input type="text" id="input-title" maxlength="25">
         <label class="descricao">Adicione uma descrição</label>
         <textarea id="descri" name="text" id="" cols="30" rows="5"></textarea>
         <button type="button" id="card-descri">adcionar</button>
       </form>
     </div>
+  </div>
+
+  <!--  modal atualiza os cards  -->
+  <div class="modal-edicao active-modal">
+    <form>
+      <div class="fechar-modal-edicao">X</div>
+      <label for="editar">Editar tarefa</label>
+      <textarea id="descriEditar" name="text" id="" cols="30" rows="5"></textarea>
+      <button type="button" class="editar-card">Editar</button>
+    </form>
   </div>
 
   <div class="container">
@@ -65,7 +73,7 @@
     </main>
   </div>
 
-  <script src="assets/js/script.js"></script>
+  <script type="module" src="assets/js/script.js"></script>
 </body>
 
 </html>

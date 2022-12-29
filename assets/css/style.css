@@ -110,6 +110,7 @@ header nav li.active span{
   justify-content: space-between;
   align-items: center;
   font-size: 1.8rem;
+  padding: 1rem;
 }
 
 .button-adiciona span {
@@ -169,8 +170,15 @@ header nav li.active span{
   header nav { 
     display: none;
   }
-  .conteudo .h2{
+  .conteudo .button-adiciona{
     margin-left: 0;
+
+  }
+  .conteudo .button-adiciona h2{
+    font-size: 1.6rem;
+  }
+  .conteudo .button-adiciona span{
+    font-size: 1rem;
   }
 }
 
@@ -329,6 +337,7 @@ header nav li.active span{
 
 .modal-coluna form .descricao {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .modal-coluna .modal-descricao {
@@ -343,8 +352,100 @@ header nav li.active span{
   padding: 10px;
 }
 
-.button-adiciona {
+/*    todos os cards   */
+
+.all-card {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+  padding: 10px;
+  margin-bottom: 10PX;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  position: relative;
+}
+
+.all-card .editar-card,.all-card .excluir-card {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  cursor: pointer;
+}
+
+.all-card .editar-card {
+  right: 30px;
+}
+
+/*    editar descrição da tarefa   */
+
+.modal-edicao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .8);
+  z-index: 500;
+  animation: modal .5s ease forwards;
+}
+
+.modal-edicao form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: #12141E;
+  font-size: 1.5rem;
+  padding: 5rem;
+  border-radius: 10px;
+  width: min(100% - 15px, 400px);
+  position: relative;
+}
+
+.modal-edicao form textarea {
+  margin: 2rem 0;
+  border-radius: 10px;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.modal-edicao form button {
+  padding: .5rem 2rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+.modal-edicao form button:hover {
+  scale: 1.02;
+  cursor: pointer;
+}
+
+.fechar-modal-edicao {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  background-color: #030113;
+  border-radius: 50%;
+  font-size: 1rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+}
+
+.fechar-modal-edicao:hover {
+  cursor: pointer;
   
 }
+
+.hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+
 
 
