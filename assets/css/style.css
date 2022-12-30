@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #12141E;
+  background-color: #12141e;
 }
 
 .flex {
@@ -20,7 +20,6 @@ body {
 .container {
   max-width: 1480px;
   margin: 0 auto;
-
 }
 
 header {
@@ -58,7 +57,7 @@ header nav li {
   transition: 0.3s;
   text-align: center;
   margin-bottom: 1.2rem;
-  padding: .8rem;
+  padding: 0.8rem;
   position: relative;
 }
 
@@ -81,29 +80,29 @@ header nav li span {
   width: 0px;
   height: 50px;
   background-color: #ffffff;
-  transition: .5;
+  transition: 0.5;
 }
-header nav li.active span{
-  animation: largura .5s ease forwards;
+header nav li.active span {
+  animation: largura 0.5s ease forwards;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
 }
 
 @keyframes largura {
   form {
     width: 0;
-  } to {
+  }
+  to {
     width: 280px;
     z-index: 4;
   }
 }
 
-
 /*   conteudo geral   */
 
- .button-adiciona{
+.button-adiciona {
   text-align: center;
   color: #fff;
-  margin:  auto;
+  margin: auto;
   margin: 3rem 0 3rem 16.1rem;
   font-size: 2rem;
   display: flex;
@@ -117,7 +116,7 @@ header nav li.active span{
   text-align: end;
   cursor: pointer;
   font-size: 1.5rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 .button-adiciona span:hover {
   color: #7969f3;
@@ -126,19 +125,18 @@ header nav li.active span{
 .conteudo-principal {
   margin-left: 16.1rem;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .conteudo-principal .card {
   margin: 15px;
   display: grid;
-  gap: 20px;
   padding: 20px;
   border-radius: 10px;
   border: 2px solid rgb(82, 82, 82);
   background-color: #333542;
   color: #ffffff;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
@@ -148,54 +146,51 @@ header nav li.active span{
   right: 0px;
   font-size: 1rem;
   cursor: pointer;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 50%;
   color: red;
 }
 
 /*   responsividade  */
 
-
 @media (max-width: 960px) {
   .conteudo-principal {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
-  
-  .conteudo-principal  {
-    grid-template-columns: repeat(3,1fr);
+  .conteudo-principal {
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 0;
   }
-  header nav { 
+  header nav {
     display: none;
   }
-  .conteudo .button-adiciona{
+  .conteudo .button-adiciona {
     margin-left: 0;
-
   }
-  .conteudo .button-adiciona h2{
+  .conteudo .button-adiciona h2 {
     font-size: 1.6rem;
   }
-  .conteudo .button-adiciona span{
+  .conteudo .button-adiciona span {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 600px) {
-  .conteudo-principal  {
-    grid-template-columns: repeat(1,1fr);
+  .conteudo-principal {
+    grid-template-columns: repeat(1, 1fr);
     margin: 0 20px;
   }
 }
 
-.conteudo-principal .add-coluna{
+.conteudo-principal .add-coluna {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .conteudo-principal .add-coluna:hover {
@@ -218,7 +213,7 @@ header nav li.active span{
   color: #fff;
   text-align: left;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .conteudo-principal button:hover {
@@ -233,16 +228,16 @@ header nav li.active span{
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
   z-index: 100;
-  animation: modal .5s ease forwards;
-  
+  animation: modal 0.5s ease forwards;
 }
 
 @keyframes modal {
-  from{
+  from {
     opacity: 0;
-  } to {
+  }
+  to {
     opacity: 1;
   }
 }
@@ -273,7 +268,7 @@ header nav li.active span{
   align-items: center;
   justify-content: center;
   border: 3px solid rgb(82, 82, 82);
-  background-color: #12141E;
+  background-color: #12141e;
   position: relative;
 }
 
@@ -283,7 +278,7 @@ header nav li.active span{
 .modal-coluna form input {
   margin-top: 1rem;
   font-size: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border: 1px solid rgb(82, 82, 82);
   border-radius: 5px;
@@ -292,7 +287,8 @@ header nav li.active span{
   outline: none;
 }
 
-.modal-coluna .fechar-modal, .fechar-modal-descri {
+.modal-coluna .fechar-modal,
+.fechar-modal-descri {
   position: absolute;
   top: 15px;
   right: 20px;
@@ -317,20 +313,22 @@ header nav li.active span{
 .modal-coluna button {
   font-size: 1rem;
   margin-top: 1.2rem;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 5px;
   background: transparent;
   color: #fff;
   border: 1px solid rgb(82, 82, 82);
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 .modal-coluna button:hover {
   scale: 1.04;
 }
 
-.card-add  {
+.card-add {
   color: #929399;
+  padding: 1rem .3rem;
+  border-radius: .5rem;
 }
 
 /*   estilizndo modal add cards*/
@@ -343,7 +341,7 @@ header nav li.active span{
 .modal-coluna .modal-descricao {
   height: 400px;
   max-width: 40%;
-} 
+}
 
 .modal-coluna form textarea {
   background: transparent;
@@ -355,16 +353,25 @@ header nav li.active span{
 /*    todos os cards   */
 
 .all-card {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   padding: 10px;
-  margin-bottom: 10PX;
+  margin-bottom: 10px;
   border-radius: 5px;
   color: #000;
   background-color: #fff;
   position: relative;
+  word-break: keep-all;
+  padding-right: 30px;
 }
 
-.all-card .editar-card,.all-card .excluir-card {
+.all-card .container {
+
+  padding-right: 40px;
+}
+
+
+.all-card .editar-card,
+.all-card .excluir-card {
   position: absolute;
   top: 7px;
   right: 7px;
@@ -383,21 +390,21 @@ header nav li.active span{
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 500;
-  animation: modal .5s ease forwards;
+  animation: modal 0.5s ease forwards;
 }
 
 .modal-edicao form {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
-  background-color: #12141E;
+  background-color: #12141e;
   font-size: 1.5rem;
   padding: 5rem;
   border-radius: 10px;
@@ -413,8 +420,8 @@ header nav li.active span{
 }
 
 .modal-edicao form button {
-  padding: .5rem 2rem;
-  border-radius: .5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -425,8 +432,8 @@ header nav li.active span{
 
 .fechar-modal-edicao {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
+  top: 0.5rem;
+  right: 0.5rem;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -434,18 +441,14 @@ header nav li.active span{
   background-color: #030113;
   border-radius: 50%;
   font-size: 1rem;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .fechar-modal-edicao:hover {
   cursor: pointer;
-  
 }
 
 .hover {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
-
-
 

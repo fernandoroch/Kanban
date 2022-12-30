@@ -224,12 +224,16 @@ export default function geral() {
   }
 
   function atualizarCards() {
-    let valorinput = document.querySelector("#descriEditar").value;
-    modalBody.classList.add("active-modal");
-    document.querySelector("#descriEditar").value = "";
+    let valorInput = document.querySelector("#descriEditar").value;
+    if (valorInput) {
+      modalBody.classList.add("active-modal");
+      document.querySelector("#descriEditar").value = "";
 
-    todasColunas[columnEditar].card[linhaEditar].name = valorinput;
-    atualizarDom();
+      todasColunas[columnEditar].card[linhaEditar].name = valorInput;
+      atualizarDom();
+    } else {
+      alert('campo não pode estar vazio.')
+    }
   }
 
   /*   movimentando cards entre as colunas   */
