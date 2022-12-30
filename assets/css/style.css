@@ -160,7 +160,7 @@ header nav li.active span {
 }
 @media (max-width: 768px) {
   .conteudo-principal {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-left: 0;
   }
   header nav {
