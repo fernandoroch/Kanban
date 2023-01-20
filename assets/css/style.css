@@ -140,6 +140,10 @@ header nav li.active span {
   position: relative;
 }
 
+.card h2 {
+  text-transform: capitalize;
+}
+
 .card h2 span {
   position: absolute;
   top: 0px;
