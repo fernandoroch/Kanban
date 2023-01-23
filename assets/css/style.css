@@ -340,6 +340,7 @@ header nav li.active span {
 .modal-coluna form .descricao {
   margin-top: 1rem;
   margin-bottom: 1rem;
+
 }
 
 .modal-coluna .modal-descricao {
@@ -352,6 +353,8 @@ header nav li.active span {
   color: #fff;
   outline: none;
   padding: 10px;
+  max-width: 300px;
+  max-height: 100px;
 }
 
 /*    todos os cards   */
@@ -421,6 +424,8 @@ header nav li.active span {
   border-radius: 10px;
   outline: none;
   padding: 0.5rem;
+  max-width: 300px;
+  max-height: 100px;
 }
 
 .modal-edicao form button {
